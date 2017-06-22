@@ -1,0 +1,7 @@
+Project Goals
+The overall goal is to use the hyperspectral camera pixel intensity amounts (for each wavelength at each pixel within the corn part of the image) to predict the sample labels (things like genotype, hormone, stress environment, oil content).  
+First we need to find the image files and the labels for each image.
+Second we will want to do image analysis, to pick out the corn kernel (non-black) pixels in each image file, and map out how these look so they can be associated with labels.  
+Thirdly we will sort through the pixel labels to chose only those pixel wavelenths features that are good predictors of label type.  
+
+To do the feature selection I suggest using scikitlearn; begin by doing their tutorials.  For image analysis, check with Yunkai and Garrett for suggestions; it's an easy image component selection task as the important part of the image (the corn) is the yellow part of the image (against a black background).
